@@ -1,6 +1,6 @@
 {
   "name": "assemble-reveal-builder",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Assemble.io plugin to manage slides and configs of reveal presentations",
   "homepage": "https://github.com/DanielaValero/assemble-reveal-builder",
   "bugs": {
