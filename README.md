@@ -26,7 +26,7 @@ module.exports = function(grunt) {
           expand: true,
           filter: 'isFile',
           extDot: [ 'md', 'hbs' ],
-          src: [ '**/*.index.hbs', '**/master.hbs']
+          src: [ '**/master.hbs']
         }]
       }
     }
