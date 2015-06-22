@@ -15,7 +15,7 @@ module.exports = function( params, callback ) {
     slidesFilePaths = [],
     pageIndex;
 
-  if ( null !== assemble.options.context && null !== assemble.options.context.dest && grunt.task.current.options.presentationPage) {
+  if ( null !== assemble.options.context && null !== assemble.options.context.dest && assemble.options.presentationPage) {
     grunt.verbose.writeln( 'Running reveal-builder plugin in assemble:post:pages' );
 
     var generateSlidesData = function( slidePath ) {
