@@ -20,7 +20,8 @@ module.exports = function( grunt ) {
       },
       slides: {
         options: {
-          layout: 'test/fixtures/layout-test.hbs'
+          layout: 'test/fixtures/layout-test.hbs',
+          presentationPage: true
         },
         files: [ {
           cwd: 'test/fixtures/pages-test',

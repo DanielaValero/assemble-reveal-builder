@@ -19,6 +19,9 @@ module.exports = function(grunt) {
         plugins : [ 'assemble-reveal-builder', 'other/plugins/*.js' ]
       },
       pages: {
+      options: {
+        presentationPage: true
+      },
       /* Add here only the index files you need for your presentation. Do not add the slides*/
         files: [ {
           cwd: 'src/',
