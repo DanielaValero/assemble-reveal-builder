@@ -1,0 +1,10 @@
+
+
+<h1>Reveal Config example: multiplex url: {{reveal.multiplex.url}}</h1>
+
+ {{#iterate this.slides}}
+   <section {{#if data.id }}id="{{data.id}}"{{/if }} class="slides-step step {{#if data.classes }}{{#each data.classes}}{{this}} {{/each }}{{ else }}slide{{/if }}" {{#each data.slideDataAttr }}{{#eachProperty this}} data-{{this.key}}="{{this.value}}"{{/eachProperty}}{{/each}}>
+    {{{page}}}
+  </section>
+  <div class="page-break"></div>
+  {{/iterate}}

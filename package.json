@@ -1,0 +1,43 @@
+{
+  "name": "assemble-reveal-builder",
+  "version": "0.1.0",
+  "description": "Assemble.io plugin to manage slides and configs of reveal presentations",
+  "homepage": "https://github.com/DanielaValero/assemble-reveal-builder",
+  "bugs": {
+    "url": "https://github.com/DanielaValero/assemble-reveal-builder/issues"
+  },
+  "licenses": {
+    "type": "MIT",
+    "url": "https://raw.github.com/DanielaValero/assemble-reveal-builder/master/LICENSE"
+  },
+  "author": {
+    "name": "Daniela Valero",
+    "url": "www.danielavalero.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DanielaValero/assemble-reveal-builder"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "grunt"
+  },
+  "devDependencies": {
+    "assemble": "~0.4",
+    "grunt": "~0.4",
+    "grunt-cafe-mocha": "~0.1",
+    "grunt-contrib-clean": "~0.5",
+    "grunt-contrib-jshint": "~0.8",
+    "lodash": "^3.9.3",
+    "marked": "^0.3.3"
+  },
+  "engines": {
+    "node": ">=0.8"
+  },
+  "keywords": [
+    "assemble",
+    "assembleplugin",
+    "assemble plugin",
+    "reveal.js"
+  ]
+}
