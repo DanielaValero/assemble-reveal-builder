@@ -29,7 +29,7 @@ module.exports = function( grunt ) {
           expand: true,
           filter: 'isFile',
           extDot: [ 'md', 'hbs' ],
-          src: [ '**/master.hbs']
+          src: [ '**/master.hbs', '**/index.hbs']
         } ]
       }
     },

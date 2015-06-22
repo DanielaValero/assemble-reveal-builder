@@ -15,7 +15,7 @@ module.exports = function( params, callback ) {
     slidesFilePaths = [],
     pageIndex;
 
-  if ( null !== assemble.options.context && null !== assemble.options.context.dest && assemble.options.presentationPage) {
+  if ( assemble.options.presentationPage ) {
     grunt.verbose.writeln( 'Running reveal-builder plugin in assemble:post:pages' );
 
     var generateSlidesData = function( slidePath ) {
@@ -30,10 +30,11 @@ module.exports = function( params, callback ) {
     };
 
     var isPageTheCurrentOne = function( page ) {
-      return page.filename === pages[ i ].filename;
+      return page.dest === pages[ i ].dest;
     };
 
     for ( var i = pages.length - 1; i >= 0; i-- ) {
+      slides = {};
       presentationPath = path.dirname( pages[ i ].src );
       config = grunt.file.readYAML( path.join( presentationPath, 'config.yml' ) );
       pageIndex = _.findKey( assemble.options.collections.pages.items[ 0 ].pages, isPageTheCurrentOne );
